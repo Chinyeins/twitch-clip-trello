@@ -1,0 +1,14 @@
+{
+  "name": "twitch-clip-trello",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Chinyeins/twitch-clip-trello.git",
+  "author": "Chris",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "build": "parcel build src/html/*.html"
+  }
+}
