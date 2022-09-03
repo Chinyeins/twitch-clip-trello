@@ -6,9 +6,18 @@
   "author": "Chris",
   "license": "MIT",
   "dependencies": {
+    "copy-files-from-to": "^3.2.2",
     "parcel-bundler": "^1.12.5"
   },
   "scripts": {
-    "build": "parcel build src/html/*.html"
-  }
+    "parcel-build": "parcel build src/html/*.html",
+    "copy": "copy-files-from-to",
+    "build": "yarn parcel-build && yarn copy"
+  },
+  "copyFiles": [
+    {
+        "from": "static/img/*.png",
+        "to": "dist"
+    }
+]
 }
